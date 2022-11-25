@@ -6,6 +6,7 @@
 /out-tsc
 # Only exists if Bazel was run
 /bazel-out
+/e2e
 
 # dependencies
 /node_modules
@@ -53,6 +54,8 @@ pnpm-lock.yaml
 # System Files
 .DS_Store
 Thumbs.db
+.vercel
+.angular
 
 # ignore release zips in order to have a
 # clean working directory when releasing and creating assets beforehand
