@@ -1,15 +1,24 @@
 <div class="wrapper">
-  <div class="snow layer1 ab"></div>
-  <div class="snow layer1"></div>
-  <div class="snow layer2 ab"></div>
-  <div class="snow layer2"></div>
-  <div class="snow layer3 ab"></div>
-  <div class="snow layer3"></div>
-  <div class="content">
-    <h1>Caros Weihnachts-Wünsche</h1>
-    <!-- <wish-input></wish-input> -->
-    <app-wish-list></app-wish-list>
-  </div>
+  <div
+    [class.snow]="isSnowing"
+    [class.layer1]="isSnowing"
+    class="layer1 ab"
+  ></div>
+  <div [class.snow]="isSnowing" [class.layer1]="isSnowing"></div>
+  <div [class.snow]="isSnowing" [class.layer2]="isSnowing" class="ab"></div>
+  <div [class.snow]="isSnowing" [class.layer2]="isSnowing"></div>
+  <div [class.snow]="isSnowing" [class.layer3]="isSnowing" class="ab"></div>
+  <div [class.snow]="isSnowing" [class.layer3]="isSnowing"></div>
+  <div [class.snow]="isSnowing" [class.layer4]="isSnowing" class="ab"></div>
+  <div [class.snow]="isSnowing" [class.layer4]="isSnowing"></div>
 </div>
+<div class="content">
+  <!-- <wish-input></wish-input> -->
+  <app-wish-list></app-wish-list>
+</div>
+<snow-button [(isSnowing)]="isSnowing"> </snow-button>
 
 <!-- use strapi -->
+<!-- update readMe about build path....und docs /404
+protect main by code ownership
+protect wishes -->
