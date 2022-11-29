@@ -1,5 +1,14 @@
-ul {
-  li {
-    margin-bottom: 12px;
+.list-wrapper {
+  padding: 16px;
+
+  h1 {
+    margin: 0;
+    color: #3f2c41;
+  }
+
+  ul {
+    li {
+      margin-bottom: 12px;
+    }
   }
 }
